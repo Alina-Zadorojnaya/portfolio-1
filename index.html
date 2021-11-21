@@ -17,42 +17,41 @@
     <header class="header" style="background-image:url('images/header-bg.jpeg');">
         <div class="container">
             <div class="header__wrapper">
-                <nav class="header__nav">
-                    <a class="logo" href="logo"></a>
-                    <ul class="headre__menu">
-                        <li class="headre__item">
-                            <a class="headre__link" href="#">Обо мне</a>
+                <nav class="menu__nav">
+                    <a class="logo" href="logo">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Обо мне</a>
                         </li>
-                        <li class="headre__item">
-                            <a class="headre__link" href="#">Навыки</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Навыки</a>
                         </li>
-                        <li class="headre__item">
-                            <a class="headre__link" href="#">Услуги</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Услуги</a>
                         </li>
-                        <li class="headre__item">
-                            <a class="headre__link" href="#">Портфолио</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Портфолио</a>
                         </li>
-                        <li class="headre__item">
-                            <a class="headre__link" href="#">Отзывы</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Отзывы</a>
                         </li>
-                        <li class="headre__item">
-                            <a class="headre__link" href="#">Контакты</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
                 <div class="header__inner">
-                    <div class="header__box">
-                        <h1 class="header__title">
-                            Привет, я Иван Иванов
-                            <span>
-                                frontend-разработчик
-                            </span>
-                        </h1>
-                    </div>
+                    <h1 class="header__title">
+                        Привет, я Иван Иванов
+                        <span>
+                            frontend-разработчик
+                        </span>
+                    </h1>
                     <a class="header__arrow" href="#">
-                        <span>смотреть работы</span>
-                        <img class="header__img" src="images/arrow.svg" alt="arrow">
+                        смотреть работы
                     </a>
                 </div>
             </div>
@@ -65,19 +64,25 @@
                     <h2 class="title">
                         Обо мне
                     </h2>
-                    <p>
-                        Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой
-                        более
-                        года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за что
-                        взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один интересный курс.
-                    </p>
-                    <p>
-                        С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то
-                        сложнее. Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через
-                        несколько месяцев принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и
-                        примерами
-                        работ можно ознакомиться ниже.
-                    </p>
+                    <div class="about__text">
+                        <p>
+                            Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой
+                            более
+                            года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за
+                            что
+                            взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один интересный
+                            курс.
+                        </p>
+                        <p>
+                            С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то
+                            сложнее. Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже
+                            через
+                            несколько месяцев принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и
+                            примерами
+                            работ можно ознакомиться ниже.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -91,21 +96,21 @@
                     <img class="skills__img" src="images/user.jpeg" alt="">
                     <ul class="rating">
                         <li class="rating__item">
-                            <p class="rating__name">HTML</p>
+                            <span class="rating__name">html</span>
                             <div class="rating__box">
-                                <div class="rating__line rating__line-1"></div>
+                                <div class="rating__line rating__line--max"></div>
                             </div>
                         </li>
                         <li class="rating__item">
-                            <p class="rating__name">CSS</p>
+                            <span class="rating__name">css</span>
                             <div class="rating__box">
-                                <div class="rating__line rating__line-2"></div>
+                                <div class="rating__line rating__line--average"></div>
                             </div>
                         </li>
                         <li class="rating__item">
-                            <p class="rating__name">JS</p>
+                            <span class="rating__name">js</span>
                             <div class="rating__box">
-                                <div class="rating__line rating__line-3"></div>
+                                <div class="rating__line rating__line--min"></div>
                             </div>
                         </li>
 
@@ -119,34 +124,23 @@
                 <h2 class="title">
                     Услуги
                 </h2>
-                <ul class="services__inner">
+                <ul class="services__list">
                     <li class="services__item">
-                        <img src="images/icon/icon-1.svg" alt="icon verstka">
-                        <div class="services__box">
-                            <h3 class="services__subtitle"> Вёрстка проектов</h3>
-                            <p class="services__text">
-                                Сделаю качественную вёрстку вашего проекта по предоставленному макету или примеру
-                            </p>
-                        </div>
+                        <h3 class="services__subtitle"> Вёрстка проектов</h3>
+                        <p class="services__text">
+                            Сделаю качественную вёрстку вашего проекта по предоставленному макету или примеру
+                        </p>
                     </li>
                     <li class="services__item">
-                        <img src="images/icon/icon-2.svg" alt="icon cms">
-                        <div class="services__box">
-                            <h3 class="services__subtitle">Посадка на CMS</h3>
-                            <p class="services__text">
-                                Интегрирую ваш проект в одну из популярных CMS
-                            </p>
-                        </div>
+                        <h3 class="services__subtitle">Посадка на CMS</h3>
+                        <p class="services__text">
+                            Интегрирую ваш проект в одну из популярных CMS
+                        </p>
                     </li>
                     <li class="services__item">
-                        <img src="images/icon/icon-3.svg" alt="icon support">
-                        <div class="services__box">
-                            <h3 class="services__subtitle">Поддержка сайта</h3>
-
-                            <p class="services__text">
-                                Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
-                            </p>
-                        </div>
+                        <h3 class="services__subtitle">Поддержка сайта</h3>
+                        <p class="services__text">
+                            Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
                     </li>
                 </ul>
             </div>
@@ -155,45 +149,60 @@
         <section class="portfolio">
             <div class="container">
                 <h2 class="title">Мои работы</h2>
-                <div class="portfolio__buttons">
-                    <button type="button" data-filter="all">Все работы </button>
-                    <button type="button" data-filter=".category-1">Лендинги</button>
-                    <button type="button" data-filter=".category-2">Корпоративные</button>
-                    <button type="button" data-filter=".category-3">E-commerce</button>
-                </div>
-                <div class="portfolio__container">
-                    <a class="mix category-1" data-order="1" data-fancybox="gallery"
-                        href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-1.jpeg">
-                        <img class="gallery__img" src="images/galery-1.jpeg" alt="galery-1" width="360px"
-                        height="360px">
-                    </a>
-                    <a class="mix category-2" data-order="2" data-fancybox="gallery"
-                        href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-2.jpeg">
-                        <img class="gallery__img" src="images/galery-2.jpeg" alt="galery-2" width="360px"
-                            height="360px">
-                    </a>
-                    <a class="mix category-3 category-1" data-order="3" data-fancybox="gallery"
-                        href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-3.jpeg">
-                        <img class="gallery__img" src="images/galery-3.jpeg" alt="galery-3" width="360px"
-                            height="360px">
-                    </a>
-                    <a class="mix category-1 category-2" data-order="4" data-fancybox="gallery"
-                        href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-4.jpeg">
-                        <img class="gallery__img" src="images/galery-4.jpeg" alt="galery-4" width="360px"
-                            height="360px">
-                    </a>
-                    <a class="mix category-2 category-3" data-order="5" data-fancybox="gallery"
-                        href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-5.jpeg">
-                        <img class="gallery__img" src="images/galery-5.jpeg" alt="galery-5" width="360px"
-                            height="360px">
-                    </a>
-                    <a class="mix category-3" data-order="6" data-fancybox="gallery"
-                        href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-6.jpeg">
-                        <img class="gallery__img" src="images/galery-6.jpeg" alt="galery-6" width="360px"
-                            height="360px">
-                    </a>
-                </div>
-                <button class="button__more">Загрузить еще</button>
+                <ul class="portfolio__buttons">
+                    <li class="portfolio__button">
+                        <button class="portfolio__submit" type="button" data-filter="all">Все работы </button>
+                    </li>
+                    <li class="portfolio__button">
+                        <button class="portfolio__submit" type="button" data-filter=".category-1">Лендинги</button>
+                    </li>
+                    <li class="portfolio__button">
+                        <button class="portfolio__submit" type="button" data-filter=".category-2">Корпоративные</button>
+                    </li>
+                    <li class="portfolio__button">
+                        <button class="portfolio__submit" type="button" data-filter=".category-3">E-commerce</button>
+                    </li>
+
+                </ul>
+                <ul class="portfolio__container">
+                    <li class="mix category-1 portfolio__item" data-order="1">
+                        <a class="portfolio__link" data-fancybox="gallery"
+                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-1.jpeg">
+                            <img class="gallery__img" src="images/galery-1.jpeg" alt="image-sea">
+                        </a>
+                    </li>
+                    <li class="mix category-2 portfolio__item" data-order="2">
+                        <a class="portfolio__link" data-fancybox="gallery"
+                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-2.jpeg">
+                            <img class="gallery__img" src="images/galery-2.jpeg" alt="images-boats">
+                        </a>
+                    </li>
+                    <li class="mix category-3 category-1 portfolio__item" data-order="3">
+                        <a class="portfolio__link" data-fancybox="gallery"
+                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-3.jpeg">
+                            <img class="gallery__img" src="images/galery-3.jpeg" alt="images-bridge">
+                        </a>
+                    </li>
+                    <li class="mix category-1 category-2 portfolio__item" data-order="4">
+                        <a class="portfolio__link" data-fancybox="gallery"
+                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-4.jpeg">
+                            <img class="gallery__img" src="images/galery-4.jpeg" alt="images-city">
+                        </a>
+                    </li>
+                    <li class="mix category-2 category-3 portfolio__item" data-order="5">
+                        <a class="portfolio__link" data-fancybox="gallery"
+                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-5.jpeg">
+                            <img class="gallery__img" src="images/galery-5.jpeg" alt="images-beach">
+                        </a>
+                    </li>
+                    <li class="mix category-3 portfolio__item" data-order="6">
+                        <a class="portfolio__link" data-fancybox="gallery"
+                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-6.jpeg">
+                            <img class="gallery__img" src="images/galery-6.jpeg" alt="images-rock">
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn portfolio__btn">Загрузить еще</button>
             </div>
         </section>
     </main>
