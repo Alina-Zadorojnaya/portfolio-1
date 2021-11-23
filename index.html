@@ -51,7 +51,7 @@
                         </span>
                     </h1>
                     <a class="header__arrow" href="#">
-                        смотреть работы
+                        <span class="header__link">смотреть работы</span>
                     </a>
                 </div>
             </div>
@@ -146,7 +146,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio section">
             <div class="container">
                 <h2 class="title">Мои работы</h2>
                 <ul class="portfolio__buttons">
@@ -205,16 +205,104 @@
                 <button class="btn portfolio__btn" type="button">Загрузить еще</button>
             </div>
         </section>
-        
+
         <section class="reviews section">
             <div class="container">
-                <h2 class="reviews__titil title">Отзывы клиентов</h2>
+                <h2 class="reviews__title title">Отзывы клиентов</h2>
                 <div class="reviews__inner">
-
+                    <div class="reviews__item">
+                        <img class="reviews__avotar" src="images/avotar.jpeg" alt="avotar">
+                        <span class="reviews__name">Марк Цукерберг</span>
+                        <p class="reviews__subtitle">Фантастика! Я всецело доволен
+                            работой этого специалиста.
+                            Быстро и качественно. Рекомендую!</p>
+                    </div>
+                    <a class="reviews__link" href="#">
+                        <img class="reviews__video" src="images/video-img.jpeg" alt="video">
+                        <span class="reviews__play"></span>
+                    </a>
                 </div>
             </div>
         </section>
+
+        <section class="info section">
+            <div class="container">
+                <ui class="info__list">
+                    <li class="info__item">
+                        <img class="info__img" src="images/icon/bags.jpeg" alt="bags">
+                        <span class="info__title">Выполненных работ</span>
+                        <span class="info__num">56</span>
+                    </li>
+                    <li class="info__item">
+                        <img class="info__img" src="images/icon/clients.jpeg" alt="bags">
+                        <span class="info__title">Довольных клиентов</span>
+                        <span class="info__num">23</span>
+                    </li>
+                    <li class="info__item">
+                        <img class="info__img" src="images/icon/coffee.jpeg" alt="bags">
+                        <span class="info__title">Выпито чашек кофе</span>
+                        <span class="info__num">477</span>
+                    </li>
+                    <li class="info__item">
+                        <img class="info__img" src="images/icon/review.jpeg" alt="bags">
+                        <span class="info__title">Всего отзывов</span>
+                        <span class="info__num">48</span>
+                    </li>
+                </ui>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title title">Контакты</h2>
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <p>Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона,
+                        email, в соцсетях:</p>
+                    <a class="footer__phone" href="tel:+380501111111">+38 (050) 111 11 11</a>
+                    <a class="footer__mail" href="email">frontend-monster@email.com</a>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/icon/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/icon/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="images/icon/telegram.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="footer__form" action="">
+                    <label class="footer__label">
+                       <span class="footer__text">Ваше имя</span> 
+                        <input class="footer__input" type="text" placeholder="Иван">
+                    </label>
+                    <label class="footer__label">
+                        <span class="footer__text"> Номер телефона</span>
+                        <input class="footer__input" type="text" placeholder="+380501111111">
+                    </label>
+                    <label class="footer__coment">
+                        <span class="footer__text">Ваше сообщение</span> 
+                        <textarea class="footer__textarea" name="" placeholder="Текст вашего сообщения"></textarea>
+                    </label>
+                    <button class="btn footer__btn" type="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__box">
+            <a class="logo footer__logo" href="logo">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+    </footer>
     <script src="js/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
