@@ -18,8 +18,8 @@
         <div class="container">
             <div class="header__wrapper">
                 <nav class="menu__nav">
-                    <a class="logo" href="logo">
-                        <img src="images/logo.svg" alt="">
+                    <a class="logo" href="#top">
+                        <img src="images/logo.svg" alt="логотип сайта">
                     </a>
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -60,29 +60,26 @@
     <main class="main">
         <section class="about section">
             <div class="container">
-                <div class="about__inner">
-                    <h2 class="title">
-                        Обо мне
-                    </h2>
-                    <div class="about__text">
-                        <p>
-                            Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой
-                            более
-                            года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за
-                            что
-                            взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один интересный
-                            курс.
-                        </p>
-                        <p>
-                            С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то
-                            сложнее. Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже
-                            через
-                            несколько месяцев принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и
-                            примерами
-                            работ можно ознакомиться ниже.
-                        </p>
-                    </div>
-
+                <h2 class="title">
+                    Обо мне
+                </h2>
+                <div class="about__text">
+                    <p>
+                        Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой
+                        более
+                        года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за
+                        что
+                        взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один интересный
+                        курс.
+                    </p>
+                    <p>
+                        С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то
+                        сложнее. Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже
+                        через
+                        несколько месяцев принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и
+                        примерами
+                        работ можно ознакомиться ниже.
+                    </p>
                 </div>
             </div>
         </section>
@@ -93,7 +90,7 @@
                     Навыки
                 </h2>
                 <div class="skills__inner">
-                    <img class="skills__img" src="images/user.jpeg" alt="">
+                    <img class="skills__img" src="images/user.jpeg" alt="фото автора">
                     <ul class="rating">
                         <li class="rating__item">
                             <span class="rating__name">html</span>
@@ -146,59 +143,53 @@
             </div>
         </section>
 
-        <section class="portfolio section">
+        <section class="portfolio">
             <div class="container">
                 <h2 class="title">Мои работы</h2>
-                <ul class="portfolio__buttons">
-                    <li class="portfolio__button">
-                        <button class="portfolio__submit" type="button" data-filter="all">Все работы </button>
+                <ul class="portfolio__items">
+                    <li class="portfolio__item">
+                        <button class="portfolio__button" type="button" data-filter="all">Все работы </button>
                     </li>
-                    <li class="portfolio__button">
-                        <button class="portfolio__submit" type="button" data-filter=".category-1">Лендинги</button>
+                    <li class="portfolio__item">
+                        <button class="portfolio__button" type="button" data-filter=".category-1">Лендинги</button>
                     </li>
-                    <li class="portfolio__button">
-                        <button class="portfolio__submit" type="button" data-filter=".category-2">Корпоративные</button>
+                    <li class="portfolio__item">
+                        <button class="portfolio__button" type="button" data-filter=".category-2">Корпоративные</button>
                     </li>
-                    <li class="portfolio__button">
-                        <button class="portfolio__submit" type="button" data-filter=".category-3">E-commerce</button>
+                    <li class="portfolio__item">
+                        <button class="portfolio__button" type="button" data-filter=".category-3">E-commerce</button>
                     </li>
 
                 </ul>
                 <ul class="portfolio__container">
-                    <li class="mix category-1 portfolio__item" data-order="1">
-                        <a class="portfolio__link" data-fancybox="gallery"
-                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-1.jpeg">
-                            <img class="gallery__img" src="images/galery-1.jpeg" alt="image-sea">
+                    <li class="mix category-1 portfolio__works" data-order="1">
+                        <a class="portfolio__link" data-fancybox="gallery" href="images/galery-1.jpeg">
+                            <img class="portfolio__img" src="images/galery-1.jpeg" alt="море">
                         </a>
                     </li>
-                    <li class="mix category-2 portfolio__item" data-order="2">
-                        <a class="portfolio__link" data-fancybox="gallery"
-                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-2.jpeg">
-                            <img class="gallery__img" src="images/galery-2.jpeg" alt="images-boats">
+                    <li class="mix category-2 portfolio__works" data-order="2">
+                        <a class="portfolio__link" data-fancybox="gallery" href="images/galery-2.jpeg">
+                            <img class="portfolio__img" src="images/galery-2.jpeg" alt="яхты в море ">
                         </a>
                     </li>
-                    <li class="mix category-3 category-1 portfolio__item" data-order="3">
-                        <a class="portfolio__link" data-fancybox="gallery"
-                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-3.jpeg">
-                            <img class="gallery__img" src="images/galery-3.jpeg" alt="images-bridge">
+                    <li class="mix category-3 category-1 portfolio__works" data-order="3">
+                        <a class="portfolio__link" data-fancybox="gallery" href="images/galery-3.jpeg">
+                            <img class="portfolio__img" src="images/galery-3.jpeg" alt="синий мост">
                         </a>
                     </li>
-                    <li class="mix category-1 category-2 portfolio__item" data-order="4">
-                        <a class="portfolio__link" data-fancybox="gallery"
-                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-4.jpeg">
-                            <img class="gallery__img" src="images/galery-4.jpeg" alt="images-city">
+                    <li class="mix category-1 category-2 portfolio__works" data-order="4">
+                        <a class="portfolio__link" data-fancybox="gallery" href="images/galery-4.jpeg">
+                            <img class="portfolio__img" src="images/galery-4.jpeg" alt="город с птичьего полета">
                         </a>
                     </li>
-                    <li class="mix category-2 category-3 portfolio__item" data-order="5">
-                        <a class="portfolio__link" data-fancybox="gallery"
-                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-5.jpeg">
-                            <img class="gallery__img" src="images/galery-5.jpeg" alt="images-beach">
+                    <li class="mix category-2 category-3 portfolio__works" data-order="5">
+                        <a class="portfolio__link" data-fancybox="gallery" href="images/galery-5.jpeg">
+                            <img class="portfolio__img" src="images/galery-5.jpeg" alt="пляж, пальмы">
                         </a>
                     </li>
-                    <li class="mix category-3 portfolio__item" data-order="6">
-                        <a class="portfolio__link" data-fancybox="gallery"
-                            href="file:///Users/alinazadorojnaya/Desktop/new-prorckt/portfolio/images/galery-6.jpeg">
-                            <img class="gallery__img" src="images/galery-6.jpeg" alt="images-rock">
+                    <li class="mix category-3 portfolio__works" data-order="6">
+                        <a class="portfolio__link" data-fancybox="gallery" href="images/galery-6.jpeg">
+                            <img class="portfolio__img" src="images/galery-6.jpeg" alt="скала у моря">
                         </a>
                     </li>
                 </ul>
@@ -210,43 +201,52 @@
             <div class="container">
                 <h2 class="reviews__title title">Отзывы клиентов</h2>
                 <div class="reviews__inner">
-                    <div class="reviews__item">
-                        <img class="reviews__avotar" src="images/avotar.jpeg" alt="avotar">
+                    <blockquote class="reviews__item">
+                        <img class="reviews__foto" src="images/foto.jpeg" alt="фото Цукерберг">
                         <span class="reviews__name">Марк Цукерберг</span>
                         <p class="reviews__subtitle">Фантастика! Я всецело доволен
                             работой этого специалиста.
                             Быстро и качественно. Рекомендую!</p>
-                    </div>
-                    <a class="reviews__link" href="#">
-                        <img class="reviews__video" src="images/video-img.jpeg" alt="video">
-                        <span class="reviews__play"></span>
+                    </blockquote>
+
+                    <a class="reviews__link"  data-fancybox-plyr href="https://www.youtube.com/watch?v=ncjuqj0WN6s&ab_channel=SoothingRelaxation" style="background-image: url('images/video-img.jpeg');">
                     </a>
+    
                 </div>
             </div>
         </section>
 
         <section class="info section">
             <div class="container">
+                <h2 class="sr-only">статистика</h2>
                 <ui class="info__list">
                     <li class="info__item">
-                        <img class="info__img" src="images/icon/bags.jpeg" alt="bags">
-                        <span class="info__title">Выполненных работ</span>
-                        <span class="info__num">56</span>
+                        <div class="info__box">
+                            Выполненных работ
+                            <span class="info__num">56</span>
+                        </div>
+
                     </li>
                     <li class="info__item">
-                        <img class="info__img" src="images/icon/clients.jpeg" alt="bags">
-                        <span class="info__title">Довольных клиентов</span>
-                        <span class="info__num">23</span>
+                        <div class="info__box">
+                            Довольных клиентов
+                            <span class="info__num">23</span>
+                        </div>
+
                     </li>
                     <li class="info__item">
-                        <img class="info__img" src="images/icon/coffee.jpeg" alt="bags">
-                        <span class="info__title">Выпито чашек кофе</span>
-                        <span class="info__num">477</span>
+                        <div class="info__box">
+                            Выпито чашек кофе
+                            <span class="info__num">477</span>
+                        </div>
+
                     </li>
                     <li class="info__item">
-                        <img class="info__img" src="images/icon/review.jpeg" alt="bags">
-                        <span class="info__title">Всего отзывов</span>
-                        <span class="info__num">48</span>
+                        <div class="info__box">
+                            Всего отзывов
+                            <span class="info__num">48</span>
+                        </div>
+
                     </li>
                 </ui>
             </div>
@@ -256,50 +256,59 @@
         <div class="container">
             <h2 class="footer__title title">Контакты</h2>
             <div class="footer__inner">
-                <div class="footer__info">
-                    <p>Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона,
+                <address class="footer__info">
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <p>Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона,
                         email, в соцсетях:</p>
-                    <a class="footer__phone" href="tel:+380501111111">+38 (050) 111 11 11</a>
-                    <a class="footer__mail" href="email">frontend-monster@email.com</a>
-                    <ul class="social__list">
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:+380501111111">+38 (050) 111 11 11</a>
+                        </li>
+                        <li class="contacts__item">
+                              <a class="contacts__link" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+                        </li>
+                    </ul>
+                  
+                    <ul class="social">
                         <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img class="social__img" src="images/icon/instagram.svg" alt="">
+                            <a class="social__link" href="#" style="background-image: url('images/icon/instagram.svg');">
+                                <span class="sr-only">инстаграм</span>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img class="social__img" src="images/icon/facebook.svg" alt="">
+                            <a class="social__link" href="#" style="background-image: url('images/icon/facebook.svg');">
+                                <span class="sr-only">фейсбук</span>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img class="social__img" src="images/icon/telegram.svg" alt="">
+                            <a class="social__link" href="#" style="background-image: url('images/icon/telegram.svg');">
+                                <span class="sr-only">телеграм</span> 
                             </a>
                         </li>
                     </ul>
-                </div>
+                </address>
 
-                <form class="footer__form" action="">
-                    <label class="footer__label">
-                       <span class="footer__text">Ваше имя</span> 
-                        <input class="footer__input" type="text" placeholder="Иван">
+                <form class="footer__form form" action="">
+                    <label class="form__label">
+                        <span class="form__text">Ваше имя</span>
+                        <input class="form__field" type="text" placeholder="Иван" required>
                     </label>
-                    <label class="footer__label">
-                        <span class="footer__text"> Номер телефона</span>
-                        <input class="footer__input" type="text" placeholder="+380501111111">
+                    <label class="form__label">
+                        <span class="form__text"> Номер телефона</span>
+                        <input class="form__field" type="tel" placeholder="+380501111111" required>
                     </label>
-                    <label class="footer__coment">
-                        <span class="footer__text">Ваше сообщение</span> 
-                        <textarea class="footer__textarea" name="" placeholder="Текст вашего сообщения"></textarea>
+                    <label class="form__coment">
+                        <span class="form__text">Ваше сообщение</span>
+                        <textarea class="form__field form__field--text" name="text" placeholder="Текст вашего сообщения"></textarea>
                     </label>
-                    <button class="btn footer__btn" type="button">Отправить</button>
+                    <button class="btn form__btn" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
         <div class="footer__box">
             <a class="logo footer__logo" href="logo">
-                <img src="images/logo.svg" alt="">
+                <img src="images/logo.svg" alt="логотип">
             </a>
         </div>
     </footer>
