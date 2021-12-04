@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <base target="_blank">
+    <link rel="icon" href="images/favicon.ico" type="icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
@@ -17,15 +19,16 @@
     <header class="header" style="background-image:url('images/header-bg.jpeg');">
         <div class="container">
             <div class="header__wrapper">
-                <nav class="menu__nav">
+                <nav class="menu">
 
                     <a class="logo" href="#top">
                         <img src="images/logo.svg" alt="логотип сайта">
                     </a>
 
-                    <div class="header__burger">
+                    <button class="header__burger" type="button">
+                        <span class="sr-only">кнопка для функции открыть и закрыть выпадающее меню </span>
                         <span></span>
-                    </div>
+                    </button>
 
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -65,7 +68,7 @@
         </div>
     </header>
 
-  
+
     <main class="main">
         <section class="about section">
             <div class="container">
@@ -92,7 +95,7 @@
                 </div>
             </div>
         </section>
- 
+
         <section class="skills section">
             <div class="container">
                 <h2 class="title">
@@ -147,11 +150,12 @@
                         <h3 class="services__subtitle">Поддержка сайта</h3>
                         <p class="services__text">
                             Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
+                        </p>
                     </li>
                 </ul>
             </div>
         </section>
-<!--
+
         <section class="portfolio">
             <div class="container">
                 <h2 class="title">Мои работы</h2>
@@ -170,33 +174,33 @@
                     </li>
 
                 </ul>
-                <ul class="portfolio__container">
-                    <li class="mix category-1 portfolio__works" data-order="1">
+                <ul class="portfolio__works">
+                    <li class="mix category-1 portfolio__work" data-order="1">
                         <a class="portfolio__link" data-fancybox="gallery" href="images/galery-1.jpeg">
                             <img class="portfolio__img" src="images/galery-1.jpeg" alt="море">
                         </a>
                     </li>
-                    <li class="mix category-2 portfolio__works" data-order="2">
+                    <li class="mix category-2 portfolio__work" data-order="2">
                         <a class="portfolio__link" data-fancybox="gallery" href="images/galery-2.jpeg">
                             <img class="portfolio__img" src="images/galery-2.jpeg" alt="яхты в море ">
                         </a>
                     </li>
-                    <li class="mix category-3 category-1 portfolio__works" data-order="3">
+                    <li class="mix category-3 category-1 portfolio__work" data-order="3">
                         <a class="portfolio__link" data-fancybox="gallery" href="images/galery-3.jpeg">
                             <img class="portfolio__img" src="images/galery-3.jpeg" alt="синий мост">
                         </a>
                     </li>
-                    <li class="mix category-1 category-2 portfolio__works" data-order="4">
+                    <li class="mix category-1 category-2 portfolio__work" data-order="4">
                         <a class="portfolio__link" data-fancybox="gallery" href="images/galery-4.jpeg">
                             <img class="portfolio__img" src="images/galery-4.jpeg" alt="город с птичьего полета">
                         </a>
                     </li>
-                    <li class="mix category-2 category-3 portfolio__works" data-order="5">
+                    <li class="mix category-2 category-3 portfolio__work" data-order="5">
                         <a class="portfolio__link" data-fancybox="gallery" href="images/galery-5.jpeg">
                             <img class="portfolio__img" src="images/galery-5.jpeg" alt="пляж, пальмы">
                         </a>
                     </li>
-                    <li class="mix category-3 portfolio__works" data-order="6">
+                    <li class="mix category-3 portfolio__work" data-order="6">
                         <a class="portfolio__link" data-fancybox="gallery" href="images/galery-6.jpeg">
                             <img class="portfolio__img" src="images/galery-6.jpeg" alt="скала у моря">
                         </a>
@@ -211,16 +215,18 @@
                 <h2 class="reviews__title title">Отзывы клиентов</h2>
                 <div class="reviews__inner">
                     <blockquote class="reviews__item">
-                        <img class="reviews__foto" src="images/foto.jpeg" alt="фото Цукерберг">
-                        <span class="reviews__name">Марк Цукерберг</span>
+                        <img class="reviews__photo" src="images/foto.jpeg" alt="фото Цукерберг">
+                        <cite class="reviews__name">Марк Цукерберг</cite>
                         <p class="reviews__subtitle">Фантастика! Я всецело доволен
                             работой этого специалиста.
                             Быстро и качественно. Рекомендую!</p>
                     </blockquote>
 
-                    <a class="reviews__link"  data-fancybox-plyr href="https://www.youtube.com/watch?v=ncjuqj0WN6s&ab_channel=SoothingRelaxation" style="background-image: url('images/video-img.jpeg');">
+                    <a class="reviews__link" data-fancybox-plyr
+                        href="https://www.youtube.com/watch?v=ncjuqj0WN6s&ab_channel=SoothingRelaxation"
+                        style="background-image: url('images/video-img.jpeg');">
                     </a>
-    
+
                 </div>
             </div>
         </section>
@@ -230,60 +236,48 @@
                 <h2 class="sr-only">статистика</h2>
                 <ui class="info__list">
                     <li class="info__item">
-                        <div class="info__box">
-                            Выполненных работ
-                            <span class="info__num">56</span>
-                        </div>
-
+                        <span class="info__subtitle"> Выполненных работ</span>
+                        56
                     </li>
                     <li class="info__item">
-                        <div class="info__box">
-                            Довольных клиентов
-                            <span class="info__num">23</span>
-                        </div>
-
+                        <span class="info__subtitle">Довольных клиентов</span>
+                        23
                     </li>
                     <li class="info__item">
-                        <div class="info__box">
-                            Выпито чашек кофе
-                            <span class="info__num">477</span>
-                        </div>
-
+                        <span class="info__subtitle">Выпито чашек кофе</span>
+                        477
                     </li>
                     <li class="info__item">
-                        <div class="info__box">
-                            Всего отзывов
-                            <span class="info__num">48</span>
-                        </div>
-
+                        <span class="info__subtitle">Всего отзывов</span>
+                        48
                     </li>
                 </ui>
             </div>
         </section>
-    -->
+
     </main>
-    <!--
+
     <footer class="footer">
         <div class="container">
             <h2 class="footer__title title">Контакты</h2>
             <div class="footer__inner">
                 <address class="footer__info">
-                    <ul class="contacts">
-                        <li class="contacts__item">
-                            <p>Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона,
+                    <p>Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона,
                         email, в соцсетях:</p>
-                        </li>
+                    <ul class="contacts">
                         <li class="contacts__item">
                             <a class="contacts__link" href="tel:+380501111111">+38 (050) 111 11 11</a>
                         </li>
                         <li class="contacts__item">
-                              <a class="contacts__link" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+                            <a class="contacts__link"
+                                href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
                         </li>
                     </ul>
-                  
+
                     <ul class="social">
                         <li class="social__item">
-                            <a class="social__link" href="#" style="background-image: url('images/icon/instagram.svg');">
+                            <a class="social__link" href="#"
+                                style="background-image: url('images/icon/instagram.svg');">
                                 <span class="sr-only">инстаграм</span>
                             </a>
                         </li>
@@ -294,7 +288,7 @@
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="#" style="background-image: url('images/icon/telegram.svg');">
-                                <span class="sr-only">телеграм</span> 
+                                <span class="sr-only">телеграм</span>
                             </a>
                         </li>
                     </ul>
@@ -309,9 +303,11 @@
                         <span class="form__text"> Номер телефона</span>
                         <input class="form__field" type="tel" placeholder="+380501111111" required>
                     </label>
-                    <label class="form__coment">
+                    <label class="form__comment">
+                        <!-- задала клас form__labelу але  блок  textarea не змогла розширити ніяк на всю довжину він в мене чомусь займає тільки ту частину яку вказано для інпутів -->
                         <span class="form__text">Ваше сообщение</span>
-                        <textarea class="form__field form__field--text" name="text" placeholder="Текст вашего сообщения"></textarea>
+                        <textarea class="form__field form__field--text" name="text"
+                            placeholder="Текст вашего сообщения"></textarea>
                     </label>
                     <button class="btn form__btn" type="submit">Отправить</button>
                 </form>
@@ -322,7 +318,7 @@
                 <img src="images/logo.svg" alt="логотип">
             </a>
         </div>
-    </footer>  -->
+    </footer>
     <script src="js/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

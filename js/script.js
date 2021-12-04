@@ -9,5 +9,5 @@ $(function () {
       });
 });
     
-var mixer = mixitup ( '.portfolio__container' );
+var mixer = mixitup ( '.portfolio__works' );
 
